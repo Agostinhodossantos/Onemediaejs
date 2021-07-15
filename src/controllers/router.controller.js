@@ -4,12 +4,10 @@ const home = async(req, res) => {
 }
 
 const request = async(req, res) => {
-    // const id = req.params.id
-    // const data = services[id]
+    const id = req.params.id
+    const data = services[id]
     
-
-    let data = ['1','3']
-    res.render('pages/request', data)
+    res.render('pages/request', {data})
 }
 
 module.exports = {
