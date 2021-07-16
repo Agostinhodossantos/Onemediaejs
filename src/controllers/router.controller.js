@@ -4,9 +4,14 @@ const home = async(req, res) => {
 }
 
 const request = async(req, res) => {
-    const id = req.params.id
-    const data = services[id]
-    
+    const id = req.params.id 
+    console.log(id < 0)
+
+    if (id > services.length || id <= 0) {
+        res.render('pages/404')
+    } 
+
+    const data = services[id - 1]
     res.render('pages/request', {data})
 }
 
