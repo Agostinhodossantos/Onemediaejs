@@ -4,7 +4,7 @@ const home = async(req, res) => {
 }
 
 const request_web = async(req, res) => {
-    res.render('pages/request_second')
+    res.render('pages/request_web')
 }
 
 
