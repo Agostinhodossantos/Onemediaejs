@@ -7,6 +7,10 @@ const request_web = async(req, res) => {
     res.render('pages/request_web')
 }
 
+const request_package = async(req, res) => {
+    res.render('pages/request_package')
+}
+
 
 
 const request = async(req, res) => {
