@@ -3,6 +3,12 @@ const home = async(req, res) => {
     res.render('pages/index')
 }
 
+const request_web = async(req, res) => {
+    res.render('pages/request_second')
+}
+
+
+
 const request = async(req, res) => {
     const id = req.params.id 
     console.log(id < 0)
@@ -16,5 +22,5 @@ const request = async(req, res) => {
 }
 
 module.exports = {
-    home, request
+    home, request, request_web
 }
