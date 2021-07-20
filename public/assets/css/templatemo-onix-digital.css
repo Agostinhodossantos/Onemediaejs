@@ -1159,6 +1159,10 @@ Portfolio
   margin: 0px 15px;
 }
 
+.our-portfolio .item .thumb img {
+  max-height:300px;
+}
+
 .our-portfolio .item .thumb {
   position: relative;
 }

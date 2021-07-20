@@ -13,6 +13,7 @@ const request_package = async(req, res) => {
 
 
 
+
 const request = async(req, res) => {
     const id = req.params.id 
     console.log(id < 0)
@@ -26,5 +27,5 @@ const request = async(req, res) => {
 }
 
 module.exports = {
-    home, request, request_web
+    home, request, request_web, request_package
 }

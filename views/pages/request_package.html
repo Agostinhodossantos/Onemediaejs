@@ -3,22 +3,32 @@
 <html lang="en">
 
   <head>
-    <%- include('../partials/head.html') %>
-    <link rel="stylesheet" href="/assets/css/request.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='/assets/images/logo.png' />
+    <title>Onemedia - Marketing, publicidade</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="/assets/css/package.css">
   </head>
 
 <body>
 
-  <!-- ***** Preloader Start ***** -->
-    <%- include('../partials/preloader.html')%>
-  <!-- ***** Preloader End ***** -->
 
-  <!-- ***** Header Area Start ***** -->
-    <%- include('../partials/header.html')%>
-  <!-- ***** Header Area End ***** -->
 
   <!-- <div class="main-banner" id="top"> -->
-    <div class="container">
+    <!-- <div class="container">
         <div class="item header-text">
                  
         </div>
@@ -28,70 +38,86 @@
         <div class="item header-text">
          
         </div>
-    </div>
+    </div> -->
  
     <div class="request">
-      <div class="container card-0 justify-content-center ">
-        <div class="card-body px-sm-4 px-0">
-            <div class="row justify-content-center mb-5">
-                <div class="col-md-10 col">
-                    <h3 class="font-weight-bold ml-md-0 mx-auto text-center text-sm-left"> Solicitar Orçamento </h3>
-                    <p class="mt-md-4 ml-md-0 ml-2 text-center text-sm-left"> Solicitar Orçamento online Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <div class="card">
+        <div class="card-top border-bottom text-center"> <a href="#">Pagina inicial</a> <span id="logo">Onemedia</span> </div>
+        <div class="card-body">
+            <div class="row upper">
+               <!-- <span><i class="fa fa-check-circle-o"></i> Comp</span> -->
+                <!-- <span><i class="fa fa-check-circle-o"></i> Escolher pacote</span>  -->
+                <span id="payment"><span id="three"><i class="fa fa-check-circle-o"></i></span>Pagamento</span> </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="left border">
+                        <div class="row"> <span class="header">Detalhes de pagamento</span>
+                            <div class="icons"> <img src="https://img.icons8.com/color/48/000000/visa.png" /> <img src="https://img.icons8.com/color/48/000000/mastercard-logo.png" /> <img src="https://img.icons8.com/color/48/000000/maestro.png" /> </div>
+                        </div>
+                        <form> 
+                          <span>Nome completo:</span> 
+                          <input placeholder="Agostinho Dos Santos"> 
+                          <span>Localização:</span> 
+                          <input placeholder="Mocambique, Maputo">
+                          <span>Email:</span> 
+                          <input placeholder="Seu email">
+                            <div class="row">
+                                <div class="col-4">
+                                  <span>Inicio do evento</span> 
+                                  <input placeholder="YY/MM"> 
+                                </div>
+                                <div class="col-8">
+                                  <span>Duração do evento:</span> 
+                                  <input id="cvv" value="1" placeholder="" type="number"> 
+                                </div>
+                            </div> 
+                            <input type="checkbox" id="save_card" value="checked" class="align-left"> 
+                            <label for="save_card">Salvar detalhes do pagamento</label>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <div class="row justify-content-center round">
-                <div class="col-lg-10 col-md-12 ">
-                    <div class="card shadow-lg card-1">
-                        <div class="card-body inner-card">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-5 col-md-6 col-sm-12">
-                                    <div class="form-group"><label for="first-name">Nome</label><input type="text" class="form-control" id="first-name" placeholder="Type your Name" /> </div>
-                                    <div class="form-group"> <label for="Mobile-Number">Contacto</label> <input type="text" class="form-control" id="Mobile-Number" placeholder=""/> </div>
-                                    <div class="form-group"> <label for="inputEmail4">Tipo de site que você precisa</label> <select class="form-control">
-                                            <option>Landing page</option>
-                                            <option>E-commerce</option>
-                                            <option>Single page</option>
-                                        </select> </div>
-                                    <div class="form-group"> <label for="time">Endereço para o Site</label> <input type="text" class="form-control" id="time" placeholder=""/> </div>
-                                    <div class="form-group"><label for="skill">Tipo de Domínio</label> <input type="text" class="form-control" id="skill" placeholder=""/> </div>
-                                </div>
-                                <div class="col-lg-5 col-md-6 col-sm-12">
-                                    <div class="form-group"> <label for="last-name">Apelido</label> <input type="text" class="form-control" id="last-name" placeholder=""/> </div>
-                                    <div class="form-group"> <label for="phone">Email</label> <input type="email" class="form-control" id="email" placeholder=""/> </div>
-                                    <div class="form-group"> <label for="Evaluate Budget">Localização</label> <input type="text" class="form-control" id="Evaluate Budget" placeholder=""/> </div>
-                                    <div class="form-group"> <label for="Company-Name">Nome da empresa</label> <input type="text" class="form-control" id="Company-Name" placeholder=""/> </div>
-                                    <!-- <div class="form-group"> <label for="inputEmail4">Country</label> <select class="form-control">
-                                            <option>India</option>
-                                            <option>China</option>
-                                            <option>UK</option>
-                                        </select>
-                                      </div>  -->
-                                   </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-md-12 col-lg-10 col-12">
-                                    <div class="form-group files"><label class="my-auto">Anexar um arquivo</label> <input id="file" type="file" class="form-control" /></div>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center">
-                                <div class="col-md-12 col-lg-10 col-12">
-                                    <div class="form-group"> <label for="exampleFormControlTextarea2">Outros detalhes</label> <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="5"></textarea></div>
-                                    <div class="row justify-content-end mb-5">
-                                        <div class="col-lg-4 col-auto "><button type="button" class="btn btn-primary btn-block"><small class="font-weight-bold">Solicitar orcamento</small></button> </div>
-                                    </div>
-                                </div>
+                <div class="col-md-5">
+                    <div class="right border">
+                        <div class="header">Seu pacote</div>
+                        <p>1 item</p>
+                        <div class="row item">
+                            <div class="col-4 align-self-center"><img class="img-fluid" src="https://i.imgur.com/79M6pU0.png"></div>
+                            <div class="col-8">
+                                <div class="row">Pacote basico</div>
+                                <div class="row text-muted">Sed ut perspiciatis unde omnis iste natus error sit</div>
+                                <!-- <div class="row">Qtd:1</div> -->
                             </div>
                         </div>
+                       
+                        <hr>
+                        <div class="row lower">
+                            <div class="col text-left">Subtotal</div>
+                            <div class="col text-right">46.98 MZN</div>
+                        </div>
+                        <div class="row lower">
+                          <div class="col text-left">IVA</div>
+                          <div class="col text-right">4000 MZN</div>
+                      </div>
+                        <div class="row lower">
+                            <div class="col text-left">Entrega</div>
+                            <div class="col text-right">Grátis</div>
+                        </div>
+
+                        <div class="row lower">
+                            <div class="col text-left"><b>Total</b></div>
+                            <div class="col text-right"><b>46.98 MZN</b></div>
+                        </div>
+                         <button class="btn">Faça a encomenda</button>
+                        <p class="text-muted text-center">Complimentary Shipping & Returns</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div> </div>
     </div>
-  
     </div>
   
 
-   <%- include('../partials/footer.html')%>
 
 
   <!-- Scripts -->
