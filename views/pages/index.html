@@ -24,7 +24,7 @@
             <div class="col-lg-6 align-self-center">
               <div class="owl-carousel owl-banner">
                 <div class="item header-text">
-                  <h6>Bem-vindo ao Onemedia</h6>
+                  <h6>Bem-vindo a Onemedia</h6>
                   <h2>Crie seu site com melhor <span> SEO</span></h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolo.</p>
                   <div class="down-buttons">
@@ -158,7 +158,7 @@
         <div class="col-lg-6">
           <div class="section-heading">
                
-            <h2>Seu evento corporativo ou empresarial com uma decoração mais moderna,  &amp; <span>inovadora</span> e<em> criativa</em> </h2>
+            <h2>Seu evento corporativo ou empresarial com uma decoração mais moderna,  &amp; <span>inovadora</span> e<span> criativa</span> </h2>
             <p>Gerir e realizar grandes eventos nacionais e internacionais, exige uma equipe organizada e multidisciplinar para executar simultaneamente tarefas diversas, E o diferencial da OneMidia.</p>
             <!-- <div class="row">
               <div class="col-lg-4">
@@ -239,7 +239,7 @@
             <div class="item">
               <a href="/request_web">
                 <div class="thumb">
-                  <img src="assets/images/design-1.jpg" alt="">
+                  <img src="assets/images/design-2.jpg" alt="">
                   <div class="hover-effect">
                     <div class="inner-content">
                       <a rel="sponsored" href="" target="_parent"><h4>Design grafico</h4></a>
@@ -266,7 +266,7 @@
             <div class="item">
               <a href="/request_web">
                 <div class="thumb">
-                  <img src="assets/images/design-2.jpg" alt="">
+                  <img src="assets/images/design-1.jpg" alt="">
                   <div class="hover-effect">
                     <div class="inner-content">
                       <a rel="sponsored" href="/request_web" target="_parent"><h4>Website</h4></a>
@@ -309,7 +309,7 @@
             <em>499MT/dia</em>
             <!-- <span>499MT</span> -->
             <ul>
-              <li>10 lorem ipsum</li>
+              <li>10 cadeiras</li>
               <li>100 lorem ipsum</li>
               <li>20 lorem ipsum</li>
               <li>Suporte basico</li>
@@ -325,7 +325,7 @@
             <em>240MT/dia</em>
             <!-- <span>160MT</span> -->
             <ul>
-              <li>20 lorem ipsum</li>
+              <li>20 cadeiras</li>
               <li>200 lorem ipsum</li>
               <li>50 lorem ipsum</li>
               <li>Suporte premium</li>
@@ -341,7 +341,7 @@
             <em>360MT/dia</em>
             <!-- <span>280 MT</span> -->
             <ul>
-              <li>30 lorem ipsum</li>
+              <li>30 cadeiras</li>
               <li>300 lorem ipsum</li>
               <li>100 lorem ipsum</li>
               <li>Suporte premium</li>
@@ -383,7 +383,7 @@
       <div class="row">
         <div class="col-lg-7">
           <div class="section-heading">  
-            <h2>Sinta-se à vontade para nos<em> contatar</em> através do formulário</h2>
+            <h2>Sinta-se à vontade para nos contatar através do formulário</h2>
             <div id="map">
               <iframe src="https://maps.google.com/maps?q=One+Media+SA,+1061+Av.+Emília+Daússe,+Maputo&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="360px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
             </div>
@@ -441,7 +441,7 @@
    <%- include('../partials/footer.html')%>
 
  <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+<button type="button" class="btn btn-primary btn-show-popup" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
   test show popup
 </button>
 
@@ -485,23 +485,44 @@
   <!-- custom lib popup -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
   <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+  
+  <!-- whatsapp -->
+
+  <!--Jquery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!--Floating WhatsApp css-->
+  <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+  <!--Floating WhatsApp javascript-->
+  <script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
+  <script>
+    $(function() {
+    $('#WAButton').floatingWhatsApp({
+      phone: '+258843655568', //WhatsApp Business phone number International format-
+      //Get it with Toky at https://toky.co/en/features/whatsapp.
+      headerTitle: 'Road Agency', //Popup Title
+      popupMessage: 'Olá, como podemos ajudá-lo?', //Popup Message
+      showPopup: true, //Enables popup display
+      buttonImage: '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
+      //headerColor: 'crimson', //Custom header color
+      //backgroundColor: 'crimson', //Custom background button color
+      
+      position: "right"    
+    });
+  });
+  </script>
 
   <script>
   // popup
-  function showPop() {
-    Swal.fire({
-      title: 'Sweet!',
-      text: 'Modal with a custom image.',
-      imageUrl: 'assets/images/banner.jpg',
-      imageWidth: 400,
-      imageHeight: 200,
-      imageMargin: 0,
-      imagePadding: 0,
-      padding: 0,
-      margin: 0,
-      imageAlt: 'Custom image',
-    })
-  }
+  window.addEventListener('scroll', () => {
+    var scrollPosition = window.scrollY;
+    var btn_show = document.querySelector(".btn-show-popup");
+    
+    if (scrollPosition > 1000) {
+        btn_show.click();
+    }
+
+  })
 
     
   // Acc
@@ -522,5 +543,7 @@
         }
     });
   </script>
+  <!--Div where the WhatsApp will be rendered-->
+  <div id="WAButton"></div>
 </body>
 </html>

@@ -1909,9 +1909,14 @@ footer .copyright p {
   font-weight: 300;
 }
 
+.btn_show {
+  display: none;
+}
+
 footer .copyright p a {
   color: #E96D28;
 }
+
 
 /* 
 ---------------------------------------------
